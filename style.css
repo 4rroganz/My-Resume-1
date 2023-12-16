@@ -1,0 +1,152 @@
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10%;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'serif';
+    margin-top: 0%;
+    color: #010101;
+    font-size: 450%;
+    font-weight: 900%;
+}
+
+#about-me {
+    font-size: larger;
+    border-radius: 70px; /* Adjust the value to control the roundness of the corners */
+    background: linear-gradient(to right, hsla(0, 95%, 70%, 1) 20%, hsla(200, 100%, 21%, 0) 80%);
+}
+
+#about-me p {
+    text-indent: 30px; /* Adjust the value to control the amount of indentation */
+    font-size: 120%;
+    margin-bottom: 30px; /* Adjust the value to control the space between list items */
+}
+
+#education {
+    font-size: larger;
+    background: linear-gradient(to right, rgb(137, 251, 106) 20%, hsla(200, 95%, 70%, 0) 80%);
+    border-radius: 80px; /* Adjust the value to control the roundness of the corners */
+}
+
+#education li {
+    font-size: 150%;
+    margin-bottom: 30px; /* Adjust the value to control the space between list items */
+}
+
+
+#skills {
+    font-size: larger;
+    background: linear-gradient(to right, rgb(219, 251, 106) 20%, hsla(200, 95%, 70%, 0) 80%);
+    border-radius: 70px; /* Adjust the value to control the roundness of the corners */
+}
+
+#skills li {
+    font-size: 150%;
+    margin-bottom: 30px; /* Adjust the value to control the space between list items */
+}
+
+#contact {
+    font-size: larger;
+    background: linear-gradient(to right, rgb(106, 181, 251) 20%, hsla(200, 95%, 70%, 0) 80%);
+    border-radius: 70px; /* Adjust the value to control the roundness of the corners */
+}
+
+#contact p {
+    font-size: 150%;
+    margin-bottom: 30px; /* Adjust the value to control the space between list items */
+}
+
+
+
+/* Navigation Styles */
+nav {
+    border-radius: 70px; /* Adjust the value to control the roundness of the corners */
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 80px;
+    position: relative;
+}
+
+/* Navigation Links */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 27px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change the color on hover */
+}
+
+/* Underline Effect on Hover */
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffcc00;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Active State Styles */
+nav a.active {
+    background-color: #ffcc00;
+    color: #333; /* Change the color in the active state */
+    animation: fadeInBackground 0.5s ease-in-out;
+}
+
+@keyframes fadeInBackground {
+    from {
+        background-color: #333;
+    }
+    to {
+        background-color: #ffcc00;
+    }
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #413f3f;
+    color: #fff;
+    /* Add more styles for dark mode as needed */
+}
+
+
+
+
